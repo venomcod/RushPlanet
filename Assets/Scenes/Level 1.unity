@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 933363068}
   - component: {fileID: 933363067}
   - component: {fileID: 933363066}
+  - component: {fileID: 933363069}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -277,14 +278,29 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933363065}
-  m_LocalRotation: {x: 0.22023523, y: -0, z: -0, w: 0.9754468}
-  m_LocalPosition: {x: 493, y: 237.6, z: 266}
+  m_LocalRotation: {x: 0.042909153, y: -0.88960606, z: 0.085373424, w: 0.4466221}
+  m_LocalPosition: {x: 513.16754, y: 128.90143, z: 791.84033}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 25.446, y: 0, z: 0}
+--- !u!114 &933363069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933363065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathCreator: {fileID: 1088149197}
+  endOfPathInstruction: 0
+  speed: 100
 --- !u!1 &1067363994
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,6 +398,145 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1088149196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1088149198}
+  - component: {fileID: 1088149197}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1088149197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088149196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  editorData:
+    _bezierPath:
+      points:
+      - {x: 67.4082, y: 0, z: 159.47797}
+      - {x: 93.945816, y: 0, z: 144.43556}
+      - {x: 114.673584, y: -4.7791786, z: 109.98334}
+      - {x: 104.83197, y: 0, z: 56.878418}
+      - {x: 97.38958, y: 3.6140938, z: 16.7196}
+      - {x: 186.43468, y: 0, z: -19.29178}
+      - {x: 188.0141, y: 0, z: -39.82419}
+      - {x: 189.84186, y: 0, z: -63.5849}
+      - {x: 177.36133, y: -8.369015, z: -96.3186}
+      - {x: 159.95416, y: -8.369015, z: -126.72336}
+      - {x: 128.27191, y: -8.369015, z: -182.06213}
+      - {x: 78.73486, y: 3.334774, z: -223.66943}
+      - {x: 62.81134, y: -7.4350586, z: -256.47678}
+      - {x: 47.055477, y: -18.091496, z: -288.9387}
+      - {x: -2.3417053, y: -5.260582, z: -316.40375}
+      - {x: -31.534332, y: -0.21982574, z: -326.43503}
+      - {x: -63.917366, y: 5.371825, z: -337.56262}
+      - {x: -109.41215, y: -5.99885, z: -282.973}
+      - {x: -141.4097, y: -12.650215, z: -265.0513}
+      - {x: -175.49637, y: -19.735857, z: -245.9595}
+      - {x: -220.04181, y: -5.8966217, z: -221.23288}
+      - {x: -224.5805, y: -9.771557, z: -200.6731}
+      - {x: -234.53854, y: -18.27329, z: -155.56427}
+      - {x: -239.82324, y: -5.0458984, z: -104.35608}
+      - {x: -247.37889, y: 2.7210922, z: -72.72461}
+      - {x: -258.926, y: 14.591173, z: -24.383091}
+      - {x: -217.63657, y: 23.338974, z: -11.106682}
+      - {x: -200.38995, y: 23.338974, z: 23.017395}
+      - {x: -194.94073, y: 23.338974, z: 33.799194}
+      - {x: -204.88898, y: 22.945705, z: 50.691772}
+      - {x: -205.21082, y: 15.827732, z: 72.95953}
+      - {x: -205.89468, y: 0.7027283, z: 120.27637}
+      - {x: -229.07996, y: 0, z: 138.14679}
+      - {x: -196.08221, y: 0, z: 162.99292}
+      - {x: -183.19159, y: 0, z: 172.6991}
+      - {x: -154.58698, y: 19.706554, z: 173.85504}
+      - {x: -144.8512, y: 23.668053, z: 181.1239}
+      - {x: -113.52319, y: 36.41545, z: 204.5138}
+      - {x: -88.957245, y: 26.93341, z: 238.69983}
+      - {x: -58.32495, y: 26.93341, z: 241.07043}
+      - {x: -37.183716, y: 26.93341, z: 242.70654}
+      - {x: -34.347717, y: 18.400017, z: 224.84837}
+      - {x: -14.961914, y: 23.760887, z: 216.914}
+      - {x: 14.174622, y: 31.818184, z: 204.98877}
+      - {x: 48.259705, y: 0, z: 170.33197}
+      isClosed: 1
+      space: 0
+      controlMode: 0
+      autoControlLength: 0.3
+      boundsUpToDate: 0
+      bounds:
+        m_Center: {x: 4.203787, y: -0.8547271, z: 0.30324578}
+        m_Extent: {x: 27.239817, y: 2.5473008, z: 1.90255}
+      perAnchorNormalsAngle:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      globalNormalsAngle: 90
+      flipNormals: 0
+    vertexPathUpToDate: 1
+    vertexPathMaxAngleError: 0.3
+    vertexPathMinVertexSpacing: 0.01
+    showTransformTool: 1
+    showPathBounds: 0
+    showPerSegmentBounds: 0
+    displayAnchorPoints: 1
+    displayControlPoints: 1
+    bezierHandleScale: 200
+    globalDisplaySettingsFoldout: 0
+    keepConstantHandleSize: 0
+    showNormalsInVertexMode: 0
+    showBezierPathInVertexMode: 0
+    showDisplayOptions: 1
+    showPathOptions: 1
+    showVertexPathDisplayOptions: 0
+    showVertexPathOptions: 1
+    showNormals: 1
+    showNormalsHelpInfo: 0
+    tabIndex: 0
+  initialized: 1
+--- !u!4 &1088149198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088149196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 500, y: 55.9, z: 500}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1640722500
 GameObject:
