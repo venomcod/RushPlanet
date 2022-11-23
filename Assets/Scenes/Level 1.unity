@@ -651,7 +651,7 @@ MonoBehaviour:
       m_Flags: 8
     - m_Name: 
       m_Id: e099c4bf-f380-4e5d-9371-148ebaff4be9
-      m_Path: <Joystick>/stick
+      m_Path: <Gamepad>/rightStick
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -765,7 +765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2526925014433143706, guid: 05724e44760bb3746a4e47e038f5647a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2526925014433143706, guid: 05724e44760bb3746a4e47e038f5647a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -773,7 +773,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2526925014433143706, guid: 05724e44760bb3746a4e47e038f5647a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.38
+      value: 20.06
       objectReference: {fileID: 0}
     - target: {fileID: 2526925014433143706, guid: 05724e44760bb3746a4e47e038f5647a, type: 3}
       propertyPath: m_LocalRotation.w

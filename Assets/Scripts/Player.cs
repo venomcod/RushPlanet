@@ -15,9 +15,22 @@ public class Player : MonoBehaviour
         
     }
 
+    void OnEnable()
+    {
+        controlMove.Enable();
+    }
+
+    void OnDisable()
+    {
+        controlMove.Disable();
+    }
+
     // Update is called once per frame
     void Update()
     {
-
+        float horizontalMove = controlMove.ReadValue<Vector2>().x;
+        float verticalMove = controlMove.ReadValue<Vector2>().y;
+        Debug.Log(horizontalMove);
+        Debug.Log(verticalMove);
     }
 }
