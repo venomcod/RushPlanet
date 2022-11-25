@@ -561,103 +561,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cabbfa20637fb94b840e15ec7693362, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlMove:
-    m_Name: Control Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 17a0b58d-c321-40c3-9ec5-04c9d4ee3718
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 2D Vector
-      m_Id: 3839dd1d-9c77-45ea-bbbc-21ad3b6f6683
-      m_Path: 2DVector
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Control Move
-      m_Flags: 4
-    - m_Name: up
-      m_Id: 3b85cc85-ead2-4563-b507-89d01cc8a86a
-      m_Path: <Keyboard>/w
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Control Move
-      m_Flags: 8
-    - m_Name: down
-      m_Id: d563da9f-6cbe-4591-87c1-1708dcdc4215
-      m_Path: <Keyboard>/s
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Control Move
-      m_Flags: 8
-    - m_Name: left
-      m_Id: c3b287fb-42c7-4a63-b784-d67f0b6f6296
-      m_Path: <Keyboard>/a
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Control Move
-      m_Flags: 8
-    - m_Name: right
-      m_Id: 837e57ad-fc8c-42b8-9fc0-53029d51a0c9
-      m_Path: <Keyboard>/d
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Control Move
-      m_Flags: 8
-    - m_Name: 2D Vector
-      m_Id: a9f32ac2-e4c0-433b-a150-bfa7403b0e89
-      m_Path: 2DVector
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Control Move
-      m_Flags: 4
-    - m_Name: up
-      m_Id: 172af8d2-0cc9-4a76-bda0-94949795e690
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Control Move
-      m_Flags: 8
-    - m_Name: down
-      m_Id: 2a99a2d5-80ec-4d60-b2a5-9c0d7cd69914
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Control Move
-      m_Flags: 8
-    - m_Name: left
-      m_Id: 94d4e059-9131-47ea-bd11-043dd8e25dec
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Control Move
-      m_Flags: 8
-    - m_Name: right
-      m_Id: 50371788-0bbe-43f5-b1ea-7262b60dd08f
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Control Move
-      m_Flags: 8
-    - m_Name: 
-      m_Id: e099c4bf-f380-4e5d-9371-148ebaff4be9
-      m_Path: <Gamepad>/rightStick
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Control Move
-      m_Flags: 0
-    m_Flags: 0
+  xSpeed: 20
+  ySpeed: 20
+  XClamp: 17
+  YClamp: 10
 --- !u!1 &1640722500
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,15 +672,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2526925014433143706, guid: 05724e44760bb3746a4e47e038f5647a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2526925014433143706, guid: 05724e44760bb3746a4e47e038f5647a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2526925014433143706, guid: 05724e44760bb3746a4e47e038f5647a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.06
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2526925014433143706, guid: 05724e44760bb3746a4e47e038f5647a, type: 3}
       propertyPath: m_LocalRotation.w
