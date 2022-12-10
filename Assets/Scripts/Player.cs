@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     [Tooltip("м/c")][SerializeField] float Speed = 4f;
     [Tooltip("Ограничение по X")][SerializeField] float XClamp = 17f;
-    [Tooltip("Ограниченик по Y")][SerializeField] float YClamp = 17f;
+    [Tooltip("Ограничение по Y")][SerializeField] float YClamp = 17f;
     [SerializeField] float xRotFacrtor = -0.7f;
     [SerializeField] float yRotFacrtor = -0.7f;
     [SerializeField] float zRotFacrtor = 4f;
